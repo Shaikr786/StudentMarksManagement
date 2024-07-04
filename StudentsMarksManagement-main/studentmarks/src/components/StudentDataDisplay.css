@@ -1,0 +1,131 @@
+/* StudentDataDisplay.css */
+
+/* Container and Layout */
+.StudentDataDisplay {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f8f9fa; /* Light background */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  transform-style: preserve-3d; /* Enable 3D transformations */
+}
+
+.StudentDataDisplay:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; /* White background on hover */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker shade for headings */
+  transition: color 0.3s ease;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ced4da; /* Light border color */
+  border-radius: 8px;
+  background-color: #ffffff; /* White background */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px); /* Lift effect on hover */
+  border-color: #007bff; /* Border color on hover */
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+}
+
+.left-side h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #343a40; /* Darker shade for headings */
+}
+
+.left-side p,
+.right-side p {
+  margin-bottom: 5px;
+  color: #555555; /* Text color */
+}
+
+.right-side h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #343a40; /* Darker shade for headings */
+}
+
+.right-side p {
+  margin-bottom: 5px;
+  color: #555555; /* Text color */
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff; /* Blue button */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* StudentDataDisplay.css */
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #ffc107; /* Yellow edit button */
+  color: #333333;
+}
+
+.delete-button {
+  background-color: #dc3545; /* Red delete button */
+  color: #ffffff;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}
